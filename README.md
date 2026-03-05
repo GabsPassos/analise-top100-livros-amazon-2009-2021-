@@ -29,10 +29,8 @@ Os dados utilizados foram extraídos do **Kaggle**, uma plataforma de ciência d
 ## 📸 Visual do Projeto
 
 ![Página Inicial](assets/main.gif)
-_Exemplo da página de detalhes e métricas do livro selecionado._
 
 ![Reviews](assets/detalhes_livro.gif)
-_Feed de comentários dos usuários com interface de chat interativa._
 
 ---
 
