@@ -1,0 +1,77 @@
+altair==6.0.0
+asttokens @ file:///C:/b/abs_9662ywy9fp/croot/asttokens_1743630464377/work
+attrs==25.4.0
+blinker==1.9.0
+cachetools==7.0.2
+certifi==2026.2.25
+charset-normalizer==3.4.4
+click==8.3.1
+colorama @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/colorama_1699472650914/work
+comm @ file:///C:/miniconda3/conda-bld/comm_1763119289758/work
+contourpy @ file:///C:/miniconda3/conda-bld/contourpy_1763643943275/work
+cycler @ file:///C:/Users/task_176606794786808/croot/cycler_1766068049869/work
+debugpy @ file:///C:/miniconda3/conda-bld/debugpy_1762421659047/work
+decorator @ file:///C:/miniconda3/conda-bld/decorator_1757341251593/work
+executing @ file:///C:/miniconda3/conda-bld/executing_1757061247746/work
+fonttools @ file:///C:/miniconda3/conda-bld/fonttools_1765445216921/work
+gitdb==4.0.12
+GitPython==3.1.46
+idna==3.11
+ipykernel @ file:///C:/Users/task_177261243013555/croot/ipykernel_1772612530534/work
+ipython @ file:///C:/miniconda3/conda-bld/ipython_1762789324552/work
+ipython_pygments_lexers @ file:///C:/b/abs_b66hj1lo19/croot/ipython_pygments_lexers_1744753262043/work
+jedi @ file:///C:/b/abs_3a2kbnlclc/croot/jedi_1733987412687/work
+Jinja2==3.1.6
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+jupyter_client @ file:///C:/Users/task_176839881855479/croot/jupyter_client_1768399067345/work
+jupyter_core @ file:///C:/miniconda3/conda-bld/jupyter_core_1764588340612/work
+kiwisolver @ file:///C:/miniconda3/conda-bld/kiwisolver_1764159385651/work
+MarkupSafe==3.0.3
+matplotlib==3.10.8
+matplotlib-inline @ file:///C:/miniconda3/conda-bld/matplotlib-inline_1762779270163/work
+mkl-service==2.5.2
+mkl_fft @ file:///C:/miniconda3/conda-bld/mkl_fft_1761592917950/work
+mkl_random @ file:///C:/miniconda3/conda-bld/mkl_random_1761593166070/work
+narwhals @ file:///C:/miniconda3/conda-bld/narwhals_1760003513175/work
+nest-asyncio @ file:///C:/b/abs_65d6lblmoi/croot/nest-asyncio_1708532721305/work
+numpy @ file:///C:/Users/task_177073259650431/croot/numpy_and_numpy_base_1770732703057/work/dist/numpy-2.4.2-cp312-cp312-win_amd64.whl#sha256=695446e7c6dcc91b4f9b187a8af23d4024c9bd8d6a7398d7e5dc9f70c9d701d3
+packaging @ file:///C:/miniconda3/conda-bld/packaging_1761049137378/work
+pandas==2.3.3
+parso @ file:///C:/miniconda3/conda-bld/parso_1762781973155/work
+pillow @ file:///C:/Users/task_177247534067380/croot/pillow_1772475446681/work
+platformdirs @ file:///C:/miniconda3/conda-bld/platformdirs_1762356625676/work
+plotly @ file:///C:/miniconda3/conda-bld/plotly_1764254794379/work
+prompt_toolkit @ file:///C:/miniconda3/conda-bld/prompt-toolkit_1761745042157/work
+protobuf==6.33.5
+psutil @ file:///C:/miniconda3/conda-bld/psutil_1761896535983/work
+pure_eval @ file:///C:/miniconda3/conda-bld/pure_eval_1757067062212/work
+pyarrow==23.0.1
+pydeck==0.9.1
+Pygments @ file:///C:/miniconda3/conda-bld/pygments_1762431426600/work
+pyparsing @ file:///C:/miniconda3/conda-bld/pyparsing_1763973902692/work
+PyQt6==6.10.2
+PyQt6_sip @ file:///C:/Users/task_177247656413226/croot/pyqt-split_1772477410053/work/pyqt_sip
+python-dateutil @ file:///C:/b/abs_3au_koqnbs/croot/python-dateutil_1716495777160/work
+pytz==2026.1.post1
+pywin32 @ file:///C:/b/abs_6c9w_vp9zi/croot/pywin32_1754670534373/work
+pyzmq @ file:///C:/miniconda3/conda-bld/pyzmq_1762375609374/work
+referencing==0.37.0
+requests==2.32.5
+rpds-py==0.30.0
+setuptools==80.10.2
+sip @ file:///C:/Users/task_177080667796782/croot/sip_1770807601673/work
+six @ file:///C:/b/abs_149wuyuo1o/croot/six_1744271521515/work
+smmap==5.0.2
+stack_data @ file:///C:/miniconda3/conda-bld/stack_data_1757067057854/work
+streamlit==1.55.0
+tenacity==9.1.4
+toml==0.10.2
+tornado @ file:///C:/Users/task_176599264648662/croot/tornado_1765992760941/work
+traitlets @ file:///C:/b/abs_bfsnoxl4pq/croot/traitlets_1718227069245/work
+typing_extensions==4.15.0
+tzdata @ file:///home/task_176829656558347/croot/python-tzdata_1768296637279/work
+urllib3==2.6.3
+watchdog==6.0.0
+wcwidth @ file:///C:/Users/task_176777900306880/croot/wcwidth_1767779219428/work
+wheel==0.46.3
