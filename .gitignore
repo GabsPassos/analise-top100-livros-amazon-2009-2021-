@@ -1,0 +1,20 @@
+# Ambientes Virtuais
+venv/
+.venv/
+env/
+
+# Python (Arquivos temporários)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Streamlit (Configurações locais)
+.streamlit/config.toml
+.streamlit/static
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Dados
+datasets/*.csv
