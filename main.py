@@ -5,26 +5,41 @@ import plotly.express as px
 # setando largura do layout
 st.set_page_config(layout="wide")
 
-# carregando os datasets
-df_reviews = pd.read_csv("datasets/customer reviews.csv")
-df_top100_books = pd.read_csv("datasets/Top-100 Trending Books.csv")
+# 1.Boa prática: carregando os datasets com cache performance (decorator do streamlit)
+st.cache_data()
+def load_data():
+    df = pd.read_csv("datasets/Top-100 Trending Books.csv")
+    return df
 
-# colocando numa variável o max e min do preço dos livros
+df_top100_books = load_data()
+
+# 2.sidebar e filtros
+st.sidebar.header("Filters")
 price_max = df_top100_books["book price"].max()
 price_min = df_top100_books["book price"].min()
 
-# usando o método slider do st para fazer um range dos preços max e min, e limitando esse range no valor max
-max_price = st.sidebar.slider("Price Range", price_min,price_max, price_max)
-df_books = df_top100_books[df_top100_books["book price"] <= max_price]
-df_books
+max_price = st.sidebar.slider("Price Range", price_min, price_max, price_max)
 
-# usando o gráfico de barras do plotly para mostrar a qtde de livros por ano
-fig = px.bar(df_books["year of publication"].value_counts())
+# filtragem do dataframe
+df_filtered = df_top100_books[df_top100_books["book price"] <= max_price]
 
-# usando o gráfico de historograma qtde de livros naquele range de preço
-fig02 = px.histogram(df_books["book price"])
+# 3. exibição do dataframe com título
+st.title("Amazon Top 100 Best Selling Books")
+st.dataframe(df_filtered, width="stretch")
 
-# ajustando os dois gráficos acima um ao lado do outro
+# gráficos
 col1, col2 = st.columns(2)
-col1.plotly_chart(fig)
-col2.plotly_chart(fig02)
+
+# gráfico de barras - qtde por ano
+# ajustando nome dos eixos (resetando o index para o plotly renomear os eixos corretamente 
+books_per_year = df_filtered["year of publication"].value_counts().reset_index()
+books_per_year.columns = ["year", "qtde"]
+
+fig = px.bar(books_per_year, x="year", y="qtde", title="books published by year")
+col1.plotly_chart(fig, width="stretch")
+
+# hitorograma de preços
+fig02 = px.histogram(df_filtered,
+                     x="book price",
+                     labels={'book price': 'price', 'count': 'books quantity'})
+col2.plotly_chart(fig02, width='stretch')
